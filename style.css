@@ -1,0 +1,117 @@
+*{
+    /* the styles for all the elements are written here  */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background: linear-gradient( #ef0808, #c14f4f ) 0 100% no-repeat;
+    background-size: 100% 50%;
+}
+.container{
+    width: 400px;
+    padding: 50px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    background-color: #ffffff;
+    box-shadow: 0 15px 25px rgba(50,50,50,0.15);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins",-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.main-contents{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 15px;
+}
+.heading{
+    color: red;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+}
+#text{
+    position: relative;
+    width: 105%;
+    height: 40px;
+    border: none;
+    border: 2px solid black;
+    margin-left: -10px;
+    margin-top: 20px;
+    background: transparent;
+    outline: none;
+    padding: 20px 10px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #333;
+    cursor: not-allowed;
+    /* box-shadow: 4px 4px 10px rgba(255, 255, 255, .01); */
+    
+
+}
+#text::placeholder{
+    letter-spacing: 0px;
+}
+#submit{
+    color: white;
+    background: #ef0808;
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    margin-left: -10px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#submit:hover{
+    background-color: rgb(207, 66, 66);
+}
+.copied-text{
+    color: white;
+    background: #ef0808;
+    width: 320px;
+    height: 40px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    margin-left: -10px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 6px ;
+    padding-left: 15px;
+    animation: fade 3s linear infinite;
+    display: none;
+}
+.far{
+    position: absolute;
+    top: 172px;
+    right: 70px;
+    cursor: pointer;
+    opacity: 0.4;
+}
+.far:hover{
+    opacity: 1;
+}
+
+/* All animation and other things here  */
+
+@keyframes fade {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: .09;
+    }
+}
